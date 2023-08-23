@@ -33,16 +33,17 @@ function handleChange(part, direction) {
     switch(part) {
         case "head":
             headNr += direction == "right" ? 1 : -1
+            headNr = (4 + headNr)%4
             break;
         case "body":
             bodyNr += direction == "right" ? 1 : -1
+            bodyNr = (4 + bodyNr)%4
             break;
         case "legs":
             legsNr += direction == "right" ? 1 : -1
+            legsNr = (4 + legsNr)%4
             break;
     }
-    if (headNr === 4) headNr = 0;
-    if (headNr === -1) headNr = 3;
     if (bodyNr === 4) bodyNr = 0;
     if (bodyNr === -1) bodyNr = 3;
     if (legsNr === 4) legsNr = 0;
