@@ -44,9 +44,9 @@ function handleChange(part, direction) {
             legsNr = (4 + legsNr)%4
             break;
     }
-    if (bodyNr === 4) bodyNr = 0;
-    if (bodyNr === -1) bodyNr = 3;
-    if (legsNr === 4) legsNr = 0;
-    if (legsNr === -1) legsNr = 3;
+    // if (bodyNr === 4) bodyNr = 0;
+    // if (bodyNr === -1) bodyNr = 3;
+    // if (legsNr === 4) legsNr = 0;
+    // if (legsNr === -1) legsNr = 3;
     showGame();
 }
